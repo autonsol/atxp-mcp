@@ -38,7 +38,7 @@ tools:
 
 endpoints:
   free:
-    url: https://atxp-mcp.railway.app/mcp/free
+    url: https://atxp-mcp-production.up.railway.app/mcp/free
     transport: http
   pro:
     url: https://paywall.xpay.sh/atxp-mcp

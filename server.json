@@ -22,8 +22,8 @@
     }
   },
   "endpoints": {
-    "free": "https://atxp-mcp.railway.app/mcp/free",
+    "free": "https://atxp-mcp-production.up.railway.app/mcp/free",
     "pro": "https://paywall.xpay.sh/atxp-mcp",
-    "health": "https://atxp-mcp.railway.app/health"
+    "health": "https://atxp-mcp-production.up.railway.app/health"
   }
 }

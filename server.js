@@ -346,7 +346,7 @@ function startHttpServer() {
         health: "/health",
       },
       usage: {
-        mcp_client: "Configure with endpoint: https://atxp-mcp.railway.app/mcp/free",
+        mcp_client: "Configure with endpoint: https://atxp-mcp-production.up.railway.app/mcp/free",
         xpay_proxy: "https://paywall.xpay.sh/atxp-mcp",
       },
       powered_by: "ATXP (https://atxp.dev) + x402 micropayments",

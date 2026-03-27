@@ -22,7 +22,7 @@ Add to your MCP client config:
 {
   "mcpServers": {
     "atxp": {
-      "url": "https://atxp-mcp.railway.app/mcp/free",
+      "url": "https://atxp-mcp-production.up.railway.app/mcp/free",
       "transport": "http"
     }
   }
