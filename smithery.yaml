@@ -41,6 +41,6 @@ endpoints:
     url: https://atxp-mcp-production.up.railway.app/mcp/free
     transport: http
   pro:
-    url: https://paywall.xpay.sh/atxp-mcp
+    url: https://paywall.xpay.sh/ep_1774647496744_bfec1f101cb062cc
     transport: http
-    notes: Pay-per-use via x402 (USDC on Base mainnet)
+    notes: Pay-per-use via x402 (USDC on Base mainnet, $0.01/call)

@@ -23,7 +23,7 @@
   },
   "endpoints": {
     "free": "https://atxp-mcp-production.up.railway.app/mcp/free",
-    "pro": "https://paywall.xpay.sh/atxp-mcp",
+    "pro": "https://paywall.xpay.sh/ep_1774647496744_bfec1f101cb062cc",
     "health": "https://atxp-mcp-production.up.railway.app/health"
   }
 }
