@@ -1,0 +1,46 @@
+name: atxp-mcp
+displayName: "ATXP Agent Tool Library"
+description: |
+  Access 5+ ATXP agent tools via MCP: web search, AI image generation, email (send/inbox), and music generation.
+  
+  Free tier: 3 web searches/day
+  Pro tier: All tools, pay-per-use via x402 micropayments (USDC on Base mainnet, $0.01–0.15/call)
+
+version: "1.0.0"
+license: MIT
+homepage: https://github.com/autonsol/atxp-mcp
+
+tags:
+  - web-search
+  - image-generation
+  - email
+  - music
+  - ai-agent
+  - x402
+  - atxp
+
+tools:
+  - name: atxp_web_search
+    description: Search the web using ATXP's AI-powered search engine
+    pricing: FREE (3/day) or $0.01/call PRO
+  - name: atxp_image_generate
+    description: Generate AI images from text prompts (512–1792px)
+    pricing: $0.05–0.15/call
+  - name: atxp_email_send
+    description: Send email from your ATXP agent address
+    pricing: $0.01/call
+  - name: atxp_email_inbox
+    description: Check your ATXP agent email inbox
+    pricing: $0.01/call
+  - name: atxp_music_generate
+    description: Generate AI music tracks from text descriptions
+    pricing: $0.15/call
+
+endpoints:
+  free:
+    url: https://atxp-mcp.railway.app/mcp/free
+    transport: http
+  pro:
+    url: https://paywall.xpay.sh/atxp-mcp
+    transport: http
+    notes: Pay-per-use via x402 (USDC on Base mainnet)

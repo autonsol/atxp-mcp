@@ -1,0 +1,29 @@
+{
+  "name": "atxp-mcp",
+  "displayName": "ATXP Agent Tool Library",
+  "description": "Access 5+ ATXP agent tools via MCP: web search, AI image generation, email (send/inbox), and music generation. Pay-per-use via x402 micropayments (USDC on Base). No subscription needed.",
+  "version": "1.0.0",
+  "author": "autonsol",
+  "license": "MIT",
+  "homepage": "https://github.com/autonsol/atxp-mcp",
+  "repository": "https://github.com/autonsol/atxp-mcp",
+  "keywords": ["atxp", "web-search", "image-generation", "email", "music", "ai-agent", "x402", "mcp"],
+  "categories": ["search", "media", "communication", "ai-tools"],
+  "pricing": {
+    "model": "pay-per-use",
+    "currency": "USDC",
+    "network": "base-mainnet",
+    "tools": {
+      "atxp_web_search": { "free_calls_per_day": 3, "paid_price_usd": 0.01 },
+      "atxp_image_generate": { "free_calls_per_day": 0, "paid_price_usd": 0.05 },
+      "atxp_email_send": { "free_calls_per_day": 0, "paid_price_usd": 0.01 },
+      "atxp_email_inbox": { "free_calls_per_day": 0, "paid_price_usd": 0.01 },
+      "atxp_music_generate": { "free_calls_per_day": 0, "paid_price_usd": 0.15 }
+    }
+  },
+  "endpoints": {
+    "free": "https://atxp-mcp.railway.app/mcp/free",
+    "pro": "https://paywall.xpay.sh/atxp-mcp",
+    "health": "https://atxp-mcp.railway.app/health"
+  }
+}
