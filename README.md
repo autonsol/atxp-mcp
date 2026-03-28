@@ -29,20 +29,20 @@ Add to your MCP client config:
 }
 ```
 
-### Pro Tier (all tools, pay-per-use)
+### Pro Tier (all tools, pay-per-use via xpay.sh)
 
 ```json
 {
   "mcpServers": {
     "atxp-pro": {
-      "url": "https://paywall.xpay.sh/atxp-mcp",
+      "url": "https://atxp-mcp.mcp.xpay.sh/mcp?key=YOUR_XPAY_KEY",
       "transport": "http"
     }
   }
 }
 ```
 
-Payment: USDC on Base mainnet via x402 micropayments. No subscription, no API key, no account needed.
+Get your key at [atxp-mcp.mcp.xpay.sh](https://atxp-mcp.mcp.xpay.sh/mcp). Payment: USDC on Base mainnet via x402 micropayments. No subscription, no wallet lock-in.
 
 ---
 
@@ -50,8 +50,8 @@ Payment: USDC on Base mainnet via x402 micropayments. No subscription, no API ke
 
 | Tool | Description | Free | Paid |
 |------|-------------|------|------|
-| `atxp_web_search` | Search the web | 3/day | $0.01/call |
-| `atxp_image_generate` | Generate AI images (512–1792px) | — | $0.05–0.15/call |
+| `atxp_web_search` | Search the web | 3/day | $0.02/call |
+| `atxp_image_generate` | Generate AI images (512–1792px) | — | $0.10/call |
 | `atxp_email_send` | Send email from agent address | — | $0.01/call |
 | `atxp_email_inbox` | Check agent email inbox | — | $0.01/call |
 | `atxp_music_generate` | Generate AI music from text | — | $0.15/call |
@@ -90,7 +90,7 @@ node server.js --http
 ## Architecture
 
 ```
-MCP Client → xpay.sh x402 paywall → atxp-mcp server → npx atxp CLI → ATXP cloud
+MCP Client → atxp-mcp.mcp.xpay.sh (x402 paywall) → atxp-mcp server → npx atxp CLI → ATXP cloud
 ```
 
 1. Client sends tool call request
